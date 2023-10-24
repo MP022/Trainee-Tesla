@@ -19,3 +19,11 @@ Esse comendo deve continuar sendo executado durante todo o período de desenvolv
 ### Executando o site com o Live Server
 
 Para executar o site é necessário que você tenha a extenção [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) instalada no seu **VScode**. Com ela instalada basta clicar no botão que surgiu no canto inferior direito do **VScode** chamado *Go Live* e uma janela será aberta no seu navegador padrão rodando o site. Essa janela atualiza automaticamente quando algum arquivo do projeto é modificado no **VScode**, permitindo assim que você consiga acompanhar em tempo real as alterações que você está fazendo.
+
+### Executando o site com o npm start
+
+Para executar o site é necessário que você tenha instalado o npm e o node no seu computador! Feito isso basta executar o sequinte comando no terminal e o site irá abrir:
+
+*npm start*
+
+É importante avisar que apenas o html com o nome index será executado com o css de forma correta, por algum motivo usando esse método os outros html não importam o css que está linkado neles.
