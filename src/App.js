@@ -1,21 +1,26 @@
 import './style.css';
-import Cartao from './CartaoFilme'
+import Header from './Header'
+import Inicio from './inicio/Inicio'
+import Filme from './filme/Filme'
+import FormFilme from './formfilme/FormFilme.js'
+import FormComentario from './formcomentario/FormComentario.js'
+import Footer from './Footer'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
 
 function App(){
-    return  <div className="App" class="flex flex-wrap justify-center px-10 gap-y-8 gap-x-12">
-                <Cartao />
-                <Cartao />
-                <Cartao />
-                <Cartao />
-
-                <Cartao />
-                <Cartao />
-                <Cartao />
-                <Cartao />
-                
-                <Cartao />
-                <Cartao />
-            </div>;
+    return (
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path='/' element={<Inicio />}></Route>;
+                <Route path='/filme' element={<Filme />}></Route>;
+                <Route path='/FormFilme' element={<FormFilme />}></Route>;
+                <Route path='/FormComentario' element={<FormComentario />}></Route>;
+            </Routes>
+            <Footer />
+        </BrowserRouter>
+    );
 }
 
 export default App;

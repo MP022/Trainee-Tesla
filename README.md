@@ -12,7 +12,7 @@ Para conseguir desenvolver o site pelo **VScode** você precisa clonar esse repo
 
 Após fazer a clonagem ou o pull desse repositório na sua máquina é necessáio executar o seguinte comando no terminal do **VScode**:
 
-*npx tailwindcss -i ./src/init.css -o ./style/style.css --watch*
+*npx tailwindcss -i ./src/init.css -o ./src/style.css --watch*
 
 Esse comendo deve continuar sendo executado durante todo o período de desenvolvimento, com ele será possível incrementar automaticamente o **style.css** com classes já prontas do framework [TailWind](https://tailwindcss.com/). Ou seja, durante o desenvolvimento você pode entrar no site do [TailWind](https://tailwindcss.com/) e procurar por estilos do *css* que para serem adicionados ao projeto só é necessário colocar a classe que estiver especificada no site no elemento que você deseja estilizar, e pronto ele automaticamente receberá o estilo e o código do *css* será adicionado automaticamente ao arquivo **style.css**.
 
