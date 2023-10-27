@@ -5,13 +5,13 @@ import { useNavigate, useLocation } from "react-router-dom";
 function Header(){
     const navigate = useNavigate();
     const abrirInicio = () => {
-        navigate('/');
+        navigate('/Trainee-Tesla/');
     }
     const abrirFormFilme = () => {
-        navigate('/FormFilme');
+        navigate('/Trainee-Tesla/FormFilme');
     }
     const abrirFormComentario = () => {
-        navigate('/FormComentario');
+        navigate('/Trainee-Tesla/FormComentario');
     }
     
     return (
