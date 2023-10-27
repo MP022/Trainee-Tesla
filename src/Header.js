@@ -23,7 +23,7 @@ function Header(){
             {useLocation().pathname === "/" && <button onClick={abrirFormFilme}>
                 <i class="fa-solid fa-circle-plus fa-2xl" style={{color: "#f5f5f5"}}></i>
             </button>}
-            {useLocation().pathname === "/filme" && <button onClick={abrirFormComentario}>
+            {useLocation().pathname.includes("/filme/") && <button onClick={abrirFormComentario}>
                 <i class="fa-solid fa-circle-plus fa-2xl" style={{color: "#f5f5f5"}}></i>
             </button>}
         </header>

@@ -1,11 +1,14 @@
 import "../style.css";
+import { useNavigate } from "react-router-dom";
 
 function FormFilme(){
+    const navigate = useNavigate();
+
     return (
     <div class="w-screen h-screen items-center">
         <div class="flex flex-col w-3/6 m-10 py-6 bg-slate-700 rounded-xl items-center">
             <h2 class="text-xl text-white center-text">Insira as informações:</h2>
-            <form action="inicio.css" method="post" class="flex flex-col justify-around">
+            <form action={() => {navigate('/')}} method="post" class="flex flex-col justify-around">
                 <label for="nome" class="center-text text-white rounded-md">Nome do filme:</label>
                 <input type="text" id="nome" name="nome" class="rounded-lg" required/>
 

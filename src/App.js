@@ -14,7 +14,7 @@ function App(){
             <Header />
             <Routes>
                 <Route path='/' element={<Inicio />}></Route>;
-                <Route path='/filme' element={<Filme />}></Route>;
+                <Route path='/filme/:idFilme' element={<Filme />}></Route>;
                 <Route path='/FormFilme' element={<FormFilme />}></Route>;
                 <Route path='/FormComentario' element={<FormComentario />}></Route>;
             </Routes>
