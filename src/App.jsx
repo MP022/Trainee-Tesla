@@ -2,8 +2,8 @@ import './style.css';
 import Header from './Header'
 import Inicio from './inicio/Inicio'
 import Filme from './filme/Filme'
-import FormFilme from './formfilme/FormFilme.js'
-import FormComentario from './formcomentario/FormComentario.js'
+import FormFilme from './formfilme/FormFilme'
+import FormComentario from './formcomentario/FormComentario'
 import Footer from './Footer'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
