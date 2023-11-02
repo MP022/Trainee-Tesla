@@ -5,13 +5,13 @@ import { useNavigate, useLocation } from "react-router-dom";
 function Header(){
     const navigate = useNavigate();
     const abrirInicio = () => {
-        navigate('/');
+        navigate('/Trainee-Tesla/');
     }
     const abrirFormFilme = () => {
-        navigate('/FormFilme');
+        navigate('/Trainee-Tesla/FormFilme');
     }
     const abrirFormComentario = () => {
-        navigate('/FormComentario');
+        navigate('/Trainee-Tesla/FormComentario');
     }
     
     return (
@@ -20,10 +20,10 @@ function Header(){
                 <img class="w-15 h-10" src="./logo.png" alt='Logo do Site'/>
                 <h1 class="align-text-bottom text-slate-50 text-3xl">Movie Evaluate.</h1>
             </button>
-            {useLocation().pathname === "/" && <button onClick={abrirFormFilme}>
+            {useLocation().pathname === "/Trainee-Tesla/" && <button onClick={abrirFormFilme}>
                 <i class="fa-solid fa-circle-plus fa-2xl" style={{color: "#f5f5f5"}}></i>
             </button>}
-            {useLocation().pathname.includes("/filme/") && <button onClick={abrirFormComentario}>
+            {useLocation().pathname.includes("/Trainee-Tesla/filme/") && <button onClick={abrirFormComentario}>
                 <i class="fa-solid fa-circle-plus fa-2xl" style={{color: "#f5f5f5"}}></i>
             </button>}
         </header>
